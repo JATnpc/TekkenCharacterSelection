@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekken - Fighter Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="background-overlay"></div>
+        
+        <!-- Title -->
+        <div class="title-section">
+            <h1 class="main-title">FIGHTERS</h1>
+        </div>
+
+        <!-- Character Selection Grid -->
+        <div class="character-selection" id="characterSelection"></div>
+
+        <!-- Character Detail Modal -->
+        <div class="character-modal" id="characterModal" style="display:none;">
+            <div class="modal-content">
+                <button class="close-btn" id="closeModal">✕</button>
+                <div class="modal-left">
+                    <div class="character-info-section">
+                        <h1 id="modalName" class="modal-character-name"></h1>
+                        <p id="modalTagline" class="modal-tagline"></p>
+                        <div class="modal-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Country of origin:</span>
+                                <span id="modalCountry" class="detail-value"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Fighting style:</span>
+                                <span id="modalStyle" class="detail-value"></span>
+                            </div>
+                        </div>
+                        <div class="modal-description">
+                            <p id="modalDescription"></p>
+                        </div>
+                        <button class="back-btn" id="backBtn">BACK TO SELECTION</button>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <div class="modal-character-image">
+                        <img id="modalImage" src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
